@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:orientation="vertical"
     tools:context="MainActivity">
 	
     <RelativeLayout
@@ -20,28 +21,33 @@
          <ImageView
             android:id="@+id/search"
             android:layout_height="50dp"
-            android:layout_width="120dp"
-            android:src="@drawable/search"
+            android:layout_width="60dp"
+            android:src="@drawable/search_button"
             android:scaleType="fitXY" 
-            android:layout_toLeftOf="@+id/people"/>
+            android:layout_toLeftOf="@+id/people" />
          
           <ImageView
             android:id="@id/people"
             android:layout_height="50dp"
-            android:layout_width="120dp"
-            android:src="@drawable/people"
+            android:layout_width="60dp"
+            android:src="@drawable/people_button"
             android:scaleType="fitXY" 
-            android:layout_toLeftOf="@+id/pulse"/>
+            android:layout_toLeftOf="@+id/pulse" />
           
            <ImageView
             android:id="@id/pulse"
             android:layout_height="50dp"
-            android:layout_width="120dp"
-            android:src="@drawable/pulse"
+            android:layout_width="60dp"
+            android:src="@drawable/pulse_button"
             android:scaleType="fitXY"
             android:layout_alignParentRight="true" />
     	
-        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@color/main_other">
         
     </RelativeLayout>
 

@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int main_other=0x7f040001;
         public static final int main_red=0x7f040000;
     }
     public static final class dimen {
@@ -28,9 +29,15 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
         public static final int logo=0x7f020002;
         public static final int people=0x7f020003;
-        public static final int pulse=0x7f020004;
-        public static final int relaod=0x7f020005;
-        public static final int search=0x7f020006;
+        public static final int people_button=0x7f020004;
+        public static final int people_over=0x7f020005;
+        public static final int pulse=0x7f020006;
+        public static final int pulse_button=0x7f020007;
+        public static final int pulse_over=0x7f020008;
+        public static final int relaod=0x7f020009;
+        public static final int search=0x7f02000a;
+        public static final int search_button=0x7f02000b;
+        public static final int search_over=0x7f02000c;
     }
     public static final class id {
         public static final int action_settings=0x7f090004;
