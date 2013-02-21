@@ -5,73 +5,45 @@
     android:orientation="vertical"
     tools:context="MainActivity">
 	
-    <RelativeLayout
-    	android:layout_width="fill_parent"
-    	android:layout_height="80dp"
-    	android:background="@color/main_red"
-    	android:gravity="center_vertical">
-    	
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_height="50dp"
-            android:layout_width="120dp"
-            android:src="@drawable/logo"
-            android:scaleType="fitXY" />
-        
-         <ImageView
-            android:id="@+id/search"
-            android:layout_height="50dp"
-            android:layout_width="60dp"
-            android:src="@drawable/search_button"
-            android:scaleType="fitXY" 
-            android:layout_toLeftOf="@+id/people" />
-         
-          <ImageView
-            android:id="@id/people"
-            android:layout_height="50dp"
-            android:layout_width="60dp"
-            android:src="@drawable/people_button"
-            android:scaleType="fitXY" 
-            android:layout_toLeftOf="@+id/pulse" />
-          
-           <ImageView
-            android:id="@id/pulse"
-            android:layout_height="50dp"
-            android:layout_width="60dp"
-            android:src="@drawable/pulse_button"
-            android:scaleType="fitXY"
-            android:layout_alignParentRight="true" />
-    	
-    </RelativeLayout>
+	<include layout="@layout/timeline_header" />
     
     <RelativeLayout 
         android:layout_width="fill_parent"
         android:layout_height="200dp"
-        android:background="@color/main_other"
-        android:gravity="bottom" >
+        android:background="@color/main_other" >
            
         <ImageView
             android:id="@+id/reload"
             android:layout_height="50dp"
             android:layout_width="50dp"
             android:src="@drawable/reload"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:scaleType="fitXY" />
         
         <ImageView
-            android:id="@+id/white_indicator"
+            android:id="@+id/face"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:src="@drawable/face"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@id/reload"
+            android:layout_above="@+id/white_indicator"
+            android:layout_marginBottom="15dp" />
+        
+        <ImageView
+            android:id="@id/white_indicator"
             android:layout_height="20dp"
             android:layout_width="20dp"
             android:src="@drawable/white_indicator"
             android:scaleType="fitXY"
-            android:layout_toRightOf="@id/reload" />
-        
-         <ImageView
-            android:id="@+id/face"
-            android:layout_height="50dp"
-            android:layout_width="50dp"
-            android:src="@drawable/face"
-            android:scaleType="fitXY"
-            android:layout_above="@id/white_indicator"/>
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/reload"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="15dp"/>
         
         <ImageView
             android:id="@+id/clock"
@@ -79,7 +51,10 @@
             android:layout_width="150dp"
             android:src="@drawable/clock"
             android:scaleType="fitXY"
-            android:layout_toRightOf="@id/white_indicator" />
+            android:layout_toRightOf="@id/white_indicator"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15dp" />
         
     </RelativeLayout>
 
