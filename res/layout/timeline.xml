@@ -47,7 +47,39 @@
     <RelativeLayout 
         android:layout_width="fill_parent"
         android:layout_height="200dp"
-        android:background="@color/main_other">
+        android:background="@color/main_other"
+        android:gravity="bottom" >
+           
+        <ImageView
+            android:id="@+id/reload"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/reload"
+            android:scaleType="fitXY" />
+        
+        <ImageView
+            android:id="@+id/white_indicator"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:src="@drawable/white_indicator"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@id/reload" />
+        
+         <ImageView
+            android:id="@+id/face"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/face"
+            android:scaleType="fitXY"
+            android:layout_above="@id/white_indicator"/>
+        
+        <ImageView
+            android:id="@+id/clock"
+            android:layout_height="40dp"
+            android:layout_width="150dp"
+            android:src="@drawable/clock"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@id/white_indicator" />
         
     </RelativeLayout>
 
